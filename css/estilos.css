@@ -4,21 +4,17 @@
     box-sizing: border-box;
 }
 
-h1 {
+body{
+    background: rgb(155, 179, 202);
+    font-family: Arial, Helvetica, Lucida, sans-serif;
+}
+
+.divlogo__empresa{
     color: black;
     font-weight: 700;
     font-style: italic;
     position: absolute;
     top: 15px;
-}
-
-h2 {
-    display: inline;
-}
-
-body{
-    background: rgb(155, 179, 202);
-    font-family: Arial, Helvetica, Lucida, sans-serif;
 }
 
 .header{
@@ -30,18 +26,18 @@ body{
     display: inline;
 }
 
-.img-chica{
+.divlogo__img--chica{
     width: 45px;
     height: 45px;
 }
 
-.lista{
+.barra-nav__lista{
     position: absolute;
     top: 20px;
     right: 0;
 }
 
-.item{
+.barra-nav__item{
     font-size: 20px;
     text-decoration: none;
     text-align: center;
@@ -67,13 +63,7 @@ body{
 }
 
 .quienes-somos{
-    background-image: url("../assets/img/fiesta-fondo.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.img-opaca{
-    background-color: rgba(204, 205, 206, 0.534);
+    background: linear-gradient(transparent, #0009), url("../assets/img/fiesta-fondo.jpg") fixed no-repeat center/cover;
 }
 
 .subtitulo{
@@ -83,40 +73,21 @@ body{
 }
 
 .salones{
-    height: 300px;
-    width: 100%;
-
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 30vw;
+    width: 100vw;
 }
 
-.salon1{
-    display: inline-block;
-    width: 33%;
-}
-
-.salon2{
-    display: inline-block;
-    width: 33%;
-}
-
-.salon3{
-    display: inline-block;
-    width: 33%;
-
-}
-
-.foto{
-    height: 50%;
+.img-mediana {
+    border-top-left-radius: 0.3vw;
+    border-bottom-right-radius: 0.3vw;
+    border: 0.5vh solid black;
     width: 50%;
-}
-
-.img-mediana{
-    position: relative;
-    border-top-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    border: 3px solid black;
-    left: 100px;
-    height: 200px;
-    width: 250px;
+    height: 50%;
+    justify-self: center;
+    align-self: center;
+    object-fit: cover;
 }
 
 .negrita{
@@ -221,6 +192,11 @@ body{
     text-align: center;
 }
 
+input::placeholder{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
 .input{
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -269,6 +245,11 @@ body{
 .texto-gris{
     color: gray;
     font-style: italic
+}
+
+.whatsapp__img--chica{
+    width: 45px;
+    height: 45px;
 }
 
 /*Footer Contacto*/
