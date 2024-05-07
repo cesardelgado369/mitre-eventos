@@ -1,146 +1,146 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mitre Eventos</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
+
 <body>
-    <div class="grid">
-        <header class="header">
-            <section class="header__section">
-                <div class="divlogo inline">
-                    <img src="./assets/img/favicon.ico" alt="logo de Tucuman Eventos" class="divlogo__img--chica">
-                    <h2 class="divlogo__empresa inline">Mitre Eventos</h2>
+    <header class="header">
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <h2 class="logo__texto">
+                    Mitre Eventos
+                </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Salones
+                            </a>
+                            <ul class="dropdown-menu item--color">
+                                <li><a class="dropdown-item item--color" href="pages/salones.html">Salón Asunción</a>
+                                </li>
+                                <li><a class="dropdown-item item--color" href="pages/salones.html">Salón Mitre</a></li>
+                                <li><a class="dropdown-item item--color" href="pages/salones.html">Mitre Kids</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="pages/contacto.html"><strong>Reserva</strong></a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="barra inline">
-                    <nav class="barra-nav inline">
-                        <ul class="barra-nav__lista inline">
-                            <li class="barra-nav__item">
-                                <a href="index.html" class="ancla">Inicio</a>
-                            </li>
-                            <li class="barra-nav__item">
-                                <a href="pages/galeria.html" class="ancla">Galeria</a>
-                            </li>
-                            <li class="barra-nav__item">
-                                <a href="pages/nosotros.html" class="ancla">Nosotros</a>
-                            </li >
-                            <li class="barra-nav__item">
-                                <a href="pages/salones.html" class="ancla">Salones</a>
-                            </li >
-                            <li class="barra-nav__item">
-                                <a href="pages/contacto.html" class="ancla">Contacto</a>
-                            </li >
-                        </ul>
-                    </nav>
+            </div>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="nosotros">
+            <div class="nosotros__imagen">
+                <img src="assets/img/fiesta-fondo.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="nosotros__texto">
+                <div class="nosotros__titulo">
+                    <h1 class="nosotros__h1">Tu evento soñado</h1>
                 </div>
-            </section>
-        </header>
-        <main class="main">
-            <section class="quienes-somos texto-centrado">
-                <div class="quienes-somos__titulo">
-                    <h1>
-                        ¿Quienes somos?
-                    </h1>
-                </div>
-                <div class="subtitulo">
-                    <p>
-                        Somos Mitre Eventos, una organizacion que nacio en los suburbios del Oeste de San Miguel de Tucumán, que dada la calidad de sus servicios en eventos de fiestas ha acumulado mas de 20 años de experiencia, estamos dispuestos a darte el <span class="negrita">mejor evento al mejor precio</span> 
-                    </p>
-                </div>
-                <div class="subtitulo">
-                    <p>
-                        Puedes festejar desde cumpleaños infantiles con un equipo de animacion espectacular, con servicios de Aire Acondicionado y supervición parental, hasta realizar el casamiento de tus sueños con todos los servicios ofrecidos por nuestros salones e incluso con servicios externos. 
-                    </p>
-                </div>
-            </section>
-            <section class="salones">
-                <div class="salones__salon1 texto-centrado inline">
-                    <h2>
-                        Salón Asunción
-                    </h2>
-                    <div class="salones__foto">
-                        <img src="./assets/img/fiesta1.jpg" class="img-mediana" alt="Salon de Fiesta 1">
+                <section class="nosotros__subtitulo">
+                    <div class="nosotros__parrafo">
+                        <p>Bienvenido a Mitre Eventos, tu destino para celebraciones inolvidables desde el año 2001. En
+                            Mitre Eventos nos dedicamos a ofrecer servicios de salones de fiestas que superan todas las
+                            expectativas. Nos enorgullecemos de crear experiencias memorables para cada evento,
+                            asegurándonos de que cada detalle esté cuidadosamente planificado y ejecutado.</p>
                     </div>
-                    <p class="texto-centrado">
-                        Ubicado en Asunción 655
-                    </p>
-                    <a href="pages/salones.html" class="salones__ver-mas">Ver mas</a>
-                </div>
-                <div class="salones__salon2 texto-centrado inline">
-                    <h2>
-                        Salón Magalenha
-                    </h2>
-                    <div class="salones__foto">
-                        <img src="./assets/img/fiesta2.jpg" class="img-mediana" alt="Salon de Fiesta 1">
+                    <div class="nosotros__parrafo">
+                        <p>Nuestro compromiso con la excelencia se refleja en cada aspecto de nuestros servicios. Desde
+                            la elegancia de nuestros espacios hasta la atención personalizada que brindamos a cada
+                            cliente, en Mitre Eventos nos esforzamos por superar las expectativas y hacer realidad los
+                            sueños de nuestros clientes.</p>
                     </div>
-                    <p class="texto-centrado">
-                        Ubicado en Avenida Mitre 840
-                    </p>
-                    <a href="pages/salones.html" class="salones__ver-mas">Ver mas</a>
-                </div>
-                <div class="salones__salon3 texto-centrado inline">
-                    <h2>
-                        Salón Mitre Kids
-                    </h2>
-                    <div class="salones__foto">
-                        <img src="./assets/img/fiesta3.jpg" class="img-mediana" alt="Salon de Fiesta 1">
+                </section>
+            </div>
+        </section>
+        <div class="intertexto">
+            <h2>Eleji el salon que mas te guste</h2>
+        </div>
+        <section class="salones">
+            <div class="salones__salon1 salon">
+                <div class="card salones__card" style="width: 18rem;">
+                    <img src="assets/img/fiesta1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Salón Asunción</h5>
+                        <p class="card-text">Recomendado para eventos sociales</p>
+                        <a href="pages/salones.html" class="btn btn-dark">Ver mas</a>
                     </div>
-                    <p class="texto-centrado">
-                        Ubicado en Avenida Mitre 840
-                    </p>
-                    <a href="pages/salones.html" class="salones__ver-mas">Ver mas</a>
                 </div>
-            </section>
-        </main>
-        <footer class="footer">
-            <section class="mapa-contacto">
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.183622224791!2d-65.21687049418688!3d-26.816581577482857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d81c8a97f85%3A0x30cbd8c7f276b5b3!2sMagalenha!5e0!3m2!1ses-419!2sar!4v1712953629084!5m2!1ses-419!2sar" width="100%" height="240px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="salones__salon2 salon">
+                <div class="card salones__card" style="width: 18rem;">
+                    <img src="assets/img/fiesta2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Salon Mitre</h5>
+                        <p class="card-text">Recomendado para eventos formales</p>
+                        <a href="pages/salones.html" class="btn btn-dark">Ver mas</a>
+                    </div>
                 </div>
-                <div class="contacto">
-                    <h3 class="texto-centrado">Contactanos</h3>
-                    <form action="">
-                        <div class="inline">
-                            <label for="nombre"></label>
-                            <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="128" class="input input-nombre">
-                        </div>
-                        <div class="inline">
-                            <label for="telefono"></label>
-                            <input type="text" name="telefono" id="telefono" placeholder="Numero de Telefono" maxlength="128" class="input input-telefono">
-                        </div>
-                        <div>
-                            <label for="mail"></label>
-                            <input type="email" name="mail" id="mail" class="input input-email" placeholder="Correo Electronico">
-                        </div>
-                        <div>
-                            <label for=""></label>
-                            <input type="submit" value="enviar" name="" id="" class="input input-submit">
-                        </div>
-                    </form>
+            </div>
+            <div class="salones__salon3 salon">
+                <div class="card salones__card" style="width: 18rem;">
+                    <img src="assets/img/fiesta3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mitre Kids</h5>
+                        <p class="card-text">Recomendado para eventos infantiles</p>
+                        <a href="pages/salones.html" class="btn btn-dark">Ver mas</a>
+                    </div>
                 </div>
-            </section>
-            <section class="whatsapp-link">
-                <div class="texto-footer">
-                    <p class="texto-centrado">
-                        Telefono: +54 9 381 1111111
-                    </p>
-                    <p class="texto-centrado">
-                        Direccion: Avenida Mitre 840
-                    </p>
-                    <p class="texto-centrado texto-gris">
-                        © 2001-2024 Mitre Eventos 
-                    </p>
-                </div>
-                <div class="whatsapp position-fixed">
-                    <a href="https://whatsapp.com" target="_blank">
-                        <img src="./assets/img/whatsapp.png" alt="Logo de WhatsApp" class="whatsapp__img--chica">
-                    </a>
-                </div>
-            </section>
-        </footer>
-    </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="contacto">
+            <div class="mapa">
+
+            </div>
+            <div class="contacto">
+                <form action="">
+                    <div class="contacto__item"><input type="text"></div>
+                    <div class="contacto__item"><input type="text"></div>
+                    <div class="contacto__item"><input type="text"></div>
+                    <div class="contacto__item"><input type="text"></div>
+                    <div class="contacto__item"><input type="text"></div>
+                    <div class="contacto__item"><input type="text"></div>
+                </form>
+            </div>
+        </section>
+        <section class="creditos">
+            <div class="creditos__copyright">
+                <p></p>
+            </div>
+            <div class="creditos__texto-final"></div>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

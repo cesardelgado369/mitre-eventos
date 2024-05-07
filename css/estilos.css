@@ -2,51 +2,153 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background: #DDD0C8;
 }
 
-body{
-    background: rgb(155, 179, 202);
-    font-family: Arial, Helvetica, Lucida, sans-serif;
+.logo__texto {
+    font-family: "Lucida Calligraphy", cursive;
+    font-size: 2rem;
+    color: #323232;
 }
 
-.divlogo__empresa{
-    color: black;
-    font-weight: 700;
-    font-style: italic;
-    position: absolute;
-    top: 1.5vw;
+.header {
+    border-bottom: 0.5vh solid #323232;
 }
 
-.header{
-    background-color: rgb(173, 159, 80);
-    border-bottom: 0.3vw solid rgb(119, 67, 24);
+.logo {
+    display: flex;
+    justify-content: left; 
 }
 
-.inline{
+.barra {
+    display: flex;
+    justify-content: right; /* Centrar horizontalmente el contenido de la barra de navegación */
+}
+
+.barra__div{
     display: inline;
 }
 
-.divlogo__img--chica{
-    width: 6vw;
-    height: 5vh;
+.barra__lista {
+    list-style-type: none;
 }
 
-.barra-nav__lista{
-    position: absolute;
-    top: 20px;
-    right: 0;
+.barra__item {
+    display: inline;
+    margin-right: 10px; /* Añadir espacio entre los elementos de la barra de navegación */
+}
+
+.dropdown-menu{
+    background: #DDD0C8 !important;
+}
+
+/*Main de Index*/
+.nosotros{
+    display: grid;
+    grid-template-columns: 33% auto;
+    border-bottom: 0.5vh solid #323232;
+}
+
+.nosotros__texto {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.nosotros__parrafo{
+    flex: 1;
+    margin: 0 10px;
+}
+
+.intertexto{
+    text-align: center;
+}
+
+.salones{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-bottom: 0.5vh solid #323232;
+}
+
+.salones__salon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 4px solid #323232 !important;
+    border-radius: 2px;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    .nosotros{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+    .salones{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+
+
+/*
+.grid{
+    grid-template-columns: auto auto auto;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+}
+
+.header__section{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(230, 223, 186);
+    border-bottom: 0.3vw solid rgb(119, 67, 24);
+}
+
+.divlogo{
+    justify-content: left;
+    align-content: center;
+}
+
+.divlogo__img--chica{
+    width: 7.5vw;
+    height: 6vh;
+}
+
+.divlogo__empresa{
+    display: inline;
+    color: black;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.barra{
+    justify-content: flex-end;
+    align-content: center;
 }
 
 .barra-nav__item{
     font-size: 20px;
     text-decoration: none;
     text-align: center;
-    display: inline;
+    display: inline-block;
     bottom: 15px;
     border: 3px solid black;
     border-radius: 5px;
     box-sizing: content-box;
-    margin-right: 20px;
+    margin-right: 2vw;
     background-color: rgb(143, 125, 27);
 }
 
@@ -55,9 +157,10 @@ body{
     color: white;
 }
 
-/*Main de Index */
+
 
 .main{
+    grid-area: main;
     width: 100%;
     height: 100%;
 }
@@ -110,7 +213,7 @@ body{
     box-shadow: #0009;
 }
 
-/*Main de Salones */
+
 .borde{
     position: relative;
     left: 600px;
@@ -144,7 +247,7 @@ body{
     margin-top: 25px;
 }
 
-/*Main de Contacto*/
+
 
 .contenedor-contacto{
     width: 100%;
@@ -161,19 +264,20 @@ body{
     margin-top: 10px;
 }
 
-/*Footer Main*/
+
 
 .footer{
+    grid-area: footer;
     background-color: rgb(243, 219, 81);
-    border-top: 3px solid rgb(119, 67, 24);
+    border-top: 0.5vh solid rgb(119, 67, 24);
     width: 100%;
 }
 
 .mapa-contacto{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 50% 50%;
     width: 100%;
-    height: 30%;
+    height: 100%;
     background-color: rgb(143, 125, 27);
 }
 
@@ -184,12 +288,14 @@ body{
 }
 
 .contacto{
-    grid-area: ;
     box-sizing:content-box;
-    height: 300px;
-    position: absolute;
+    height: 15vh;
     display: inline-block;
     right: 0;
+}
+
+.final-footer{
+    grid-column: span 2;
 }
 
 .texto-footer{
@@ -209,45 +315,40 @@ input::placeholder{
     border-top-left-radius: 5px;
     border-bottom-right-radius: 5px;
     box-shadow: 2px;
-    position: relative;
     padding: 5px;
 }
 
 .input-nombre{
-    width: 200px;
-    height: 50px;
-    left: 250px;
+    width: 20vw;
+    height: 5vh;
 }
 
 .input-telefono{
-    width: 200px;
-    height: 50px;
-    left: 250px;
+    width: 20vw;
+    height: 5vh;
     margin-left: 10px;
 }
 
 .input-email{
-    width: 415px;
-    height: 50px;
-    left: 250px;
+    width: 40vw;
+    height: 5vh;
     margin-top: 10px;
 }
 
 .input-submit{
     background-color: black;
     color: white;
-    left: 615px;
     margin-top: 10px;
 }
 
 .texto-final{
-    border-top: 3px solid rgb(119, 67, 24);
+    border-top: 0.5vh solid rgb(119, 67, 24);
 }
 
 .position-fixed{
     position: fixed;
-    bottom: 20px;
-    right: 20px;
+    bottom: 2vh;
+    right: 2vw;
 }
 
 .texto-gris{
@@ -260,7 +361,7 @@ input::placeholder{
     height: 10vw;
 }
 
-/*Footer Contacto*/
+
 .mapa-centrado{
     height: 300px;
     width: 400px;
