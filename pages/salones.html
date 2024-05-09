@@ -1,93 +1,193 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nuestros salones</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>
     <header class="header">
-        <section class="titulo-h1">
-            <div class="caja-logo inline">
-                <img src="../assets/img/favicon.ico" alt="logo de Tucuman Eventos" class="img-chica">
-            </div>
-            <div class="inline">
-                <h1 class="inline">Mitre Eventos</h1>
-            </div>
-            <div class="inline">
-                <nav class="barra-nav inline">
-                    <ul class="lista inline">
-                        <li class="item">
-                            <a href="../index.html" class="ancla">Inicio</a>
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid">
+                <h2 class="logo__texto">
+                    Mitre Eventos
+                </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
                         </li>
-                        <li class="item">
-                            <a href="./galeria.html" class="ancla">Galeria</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Salones
+                            </a>
+                            <ul class="dropdown-menu item--color">
+                                <li><a class="dropdown-item item--color" href="#salon_asuncion">Salón Asunción</a>
+                                </li>
+                                <li><a class="dropdown-item item--color" href="#salon_mitre">Salón Mitre</a></li>
+                                <li><a class="dropdown-item item--color" href="#salon_mitrekids">Mitre Kids</a></li>
+                            </ul>
                         </li>
-                        <li class="item">
-                            <a href="./nosotros.html" class="ancla">Nosotros</a>
-                        </li >
-                        <li class="item">
-                            <a href="./salones.html" class="ancla">Salones</a>
-                        </li >
-                        <li class="item">
-                            <a href="./contacto.html" class="ancla">Contacto</a>
-                        </li >
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html"><strong>Reserva</strong></a>
+                        </li>
                     </ul>
-                </nav>
+                </div>
             </div>
-        </section>
+        </nav>
     </header>
-    <main>
-        <div>
-            <h2 class="texto-centrado borde">Nuestros salones</h2>
-        </div>
-        <section class="salon-descripcion">
-            <div class="salon">
-                <img src="../assets/img/fiesta1.jpg" class="img-mediana" alt="Salón Asuncion">
+    <main class="main__salones">
+        <section class="titulo">
+            <h1 class="titulo__texto">Nuestros Salones</h1>
+        </section>
+        <section class="salon1" id="salon_asuncion">
+            <div class="salon1__imagen">
+                <img src="../assets/img/Asuncion1.jpg" alt="" class="img-fluid">
             </div>
-            <div class="descripcion">
-                <h3 class="texto-centrado">Salón Asuncion</h3>
+            <div class="salon1__descripcion">
                 <div>
-                    <p class="texto-centrado margin-leve">
-                        Es un salón ideal para fiestas infantiles o cumpleaños, es el corazón y el origen de nuestra Organización. Cuenta con una capacidad para 90 personas y tenemos promociones para fiestas infantiles.
-                    </p>
-                    <p class="texto-centrado margin-leve">
-                        Decorado con temáticas divertidas y coloridas, nuestro salón cuenta con amplias áreas de juego, como zonas de juegos inflables, áreas para actividades creativas, rincones de disfraces y mucho más. Además, disponemos de una cómoda zona de descanso para los padres y cuidadores
-                    </p>
+                    <h3>Salon Asuncion</h3>
+                </div>
+                <div>
+                    <p>Salón con aire acondicionado, una amplia galeria con una pista de baile y con sector de fumadores. Ideal para llevar a cabo cumpleaños, comuniones o aniversarios</p>
+                    <div>
+                        <img src="../assets/img/ubicacion.png" alt="" class="d-inline imagen--chica"><p class="d-inline">Asunción 655</p>
+                    </div>
+                    <div>
+                        <img src="../assets/img/persona.png" alt="" class="d-inline imagen--chica"><p class="d-inline">Capacidad Maxima: 80 personas</p>
+                    </div>
+                </div>
+            </div>
+            <div class="salon1__carrusel">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="../assets/img/asuncion2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/asuncion3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/img/asuncion4.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
-        <section class="salon-descripcion">
-            <div class="salon">
-                <img src="../assets/img/fiesta2.jpg" class="img-mediana" alt="Salón Magalenha">
+        <section class="salon2" id="salon_mitre">
+            <div class="salon2__imagen">
+                <img src="../assets/img/mitre1.jpg" alt="" class="img-fluid">
             </div>
-            <div class="descripcion">
-                <h3 class="texto-centrado">Salón Magalenha</h3>
-                <div>
-                    <p class="texto-centrado margin-leve">
-                        Es una buena opcion para llevar a cabo reuniones empresariales, casamientos, ubicado en la elegante Avenida Mitre 840 es ideal para eventos de alto nivel. Ademas tiene una capacidad maxima para 150 personas.
-                    </p>
-                    <p class="texto-centrado margin-leve">
-                        Decorado con temáticas divertidas y coloridas, nuestro salón cuenta con amplias áreas de juego, como zonas de juegos inflables, áreas para actividades creativas, rincones de disfraces y mucho más. Además, disponemos de una cómoda zona de descanso para los padres y cuidadores
-                    </p>
+            <div class="salon2__descripcion">
+
+            </div>
+            <div class="salon2__carrusel">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
-        <section class="salon-descripcion">
-            <div class="salon">
-                <img src="../assets/img/fiesta3.jpg" class="img-mediana" alt="Salón Mitre Kids">
+        <section class="salon3" id="salon_mitrekids">
+            <div class="salon3__imagen">
+                <img src="../assets/img/mitrekids1.jpg" alt="" class="img-fluid">
             </div>
-            <div class="descripcion">
-                <h3 class="texto-centrado">Salón Mitre Kids</h3>
-                <div>
-                    <p class="texto-centrado margin-leve">
-                        Es un salon ubicado en la parte trasera de Avenida Mitre 840, es un salon hermoso para llevar a cabo eventos infantiles ya que cuenta con una cancha de futbol, con quinchos y con personal dispuesto a cuidar a sus hijos.
-                    </p>
-                    <p class="texto-centrado margin-leve">
-                        Decorado con temáticas divertidas y coloridas, nuestro salón cuenta con amplias áreas de juego, como zonas de juegos inflables, áreas para actividades creativas, rincones de disfraces y mucho más. Además, disponemos de una cómoda zona de descanso para los padres y cuidadores
-                    </p>
+            <div class="salon3__descripcion">
+
+            </div>
+            <div class="salon3__carrusel">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
             </div>
         </section>
@@ -95,22 +195,28 @@
     <footer class="footer">
         <section class="mapa-contacto">
             <div class="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.183622224791!2d-65.21687049418688!3d-26.816581577482857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d81c8a97f85%3A0x30cbd8c7f276b5b3!2sMagalenha!5e0!3m2!1ses-419!2sar!4v1712953629084!5m2!1ses-419!2sar" width="100%" height="240px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d890.183622224791!2d-65.21687049418688!3d-26.816581577482857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d81c8a97f85%3A0x30cbd8c7f276b5b3!2sMagalenha!5e0!3m2!1ses-419!2sar!4v1712953629084!5m2!1ses-419!2sar"
+                    width="100%" height="240px" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="contacto">
                 <h3 class="texto-centrado">Contactanos</h3>
                 <form action="">
                     <div class="inline">
                         <label for="nombre"></label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="128" class="input input-nombre">
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="128"
+                            class="input input-nombre">
                     </div>
                     <div class="inline">
                         <label for="telefono"></label>
-                        <input type="text" name="telefono" id="telefono" placeholder="Numero de Telefono" maxlength="128" class="input input-telefono">
+                        <input type="text" name="telefono" id="telefono" placeholder="Numero de Telefono"
+                            maxlength="128" class="input input-telefono">
                     </div>
                     <div>
                         <label for="mail"></label>
-                        <input type="email" name="mail" id="mail" class="input input-email" placeholder="Correo Electronico">
+                        <input type="email" name="mail" id="mail" class="input input-email"
+                            placeholder="Correo Electronico">
                     </div>
                     <div>
                         <label for=""></label>
@@ -128,7 +234,7 @@
                     Direccion: Avenida Mitre 840
                 </p>
                 <p class="texto-centrado texto-gris">
-                    © 2001-2024 Mitre Eventos 
+                    © 2001-2024 Mitre Eventos
                 </p>
             </div>
             <div class="position-fixed">
@@ -138,5 +244,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
