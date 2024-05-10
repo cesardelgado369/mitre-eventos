@@ -103,6 +103,7 @@
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
+    grid-row-gap: 7vh;
 }
 
 .main__salones{
@@ -119,3 +120,74 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
 }
+
+.salon__titulo{
+    font-size: 3em;
+    font-family: "Lucida Calligraphy", cursive;
+}
+
+.salon__descripcion{
+    font-size: 1.5em;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.img--mediana{
+    height: 100vh;
+    width: 90%;
+    border: 5px solid #323232;
+    border-radius: 15px;
+}
+
+.texto--cursivo{
+    font-family: "Lucida Calligraphy", cursive;
+}
+
+.texto--centrado{
+    text-align: center;
+}
+
+.texto--gris{
+    color: gray;
+}
+
+/* Footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 30vh 30vh 30vh;
+}
+
+.mapa{
+    grid-row-start: span 2;
+}
+
+.creditos{
+    grid-column: span 2;
+}
+
+@media screen and (max-width: 768px){
+    .footer{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 30vh 30vh 30vh;
+    }
+
+    .mapa{
+        grid-row-start: span 1;
+    }
+
+    .redes{
+        grid-row-start: span 2;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .footer{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 30vh 30vh 30vh;
+    }
+}
+
