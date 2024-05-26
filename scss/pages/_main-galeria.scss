@@ -1,0 +1,18 @@
+.main-galeria{
+    .titulo{
+        font-size: 3rem;
+        text-align: center;
+    }
+    .galeria{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 10px;
+        .galeria__imagen{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    border-bottom: 5px solid black;
+}

@@ -1,0 +1,16 @@
+footer{
+    text-align: center;
+    border-top: 5px solid #331f01;
+    .mapa-y-redes{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        border-bottom: 2px solid #331f01;
+        .minimapa{
+            border: 5px solid #331f01;
+            border-radius: 3px;
+        }
+    }
+    .creditos{
+        grid-column: span(2);
+    }
+}

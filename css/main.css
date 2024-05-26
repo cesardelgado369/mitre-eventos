@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #DDD0C8;
+}
+
+.header {
+  border-bottom: 0.5vh solid #323232;
+  background-color: #DDD0C8;
+}
+.header nav div .logo__texto {
+  font-family: "Lucida Calligraphy", cursive;
+  font-size: 2rem;
+  color: #323232;
+}
+.header nav div div ul li .dropdown-menu {
+  background: #DDD0C8 !important;
+}
+
+.main-index {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 100%;
+}
+.main-index .nosotros {
+  display: grid;
+  grid-template-columns: 33% auto;
+  border-bottom: 0.5vh solid #323232;
+}
+.main-index .nosotros .nosotros__texto {
+  display: grid;
+  grid-template-rows: auto;
+  align-items: center;
+  text-align: center;
+}
+.main-index .nosotros .nosotros__texto .nosotros__subtitulo .nosotros__parrafo {
+  flex: 1;
+  margin: 0 10px;
+}
+.main-index .intertexto {
+  text-align: center;
+}
+.main-index .salones {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border-bottom: 0.5vh solid #323232;
+}
+.main-index .salones .salon .card {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: 4px solid #323232 !important;
+  border-radius: 2px;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .main-index .nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  .main-index .salones {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
+.main-nosotros {
+  text-align: center;
+  padding: 40px;
+}
+
+.main-galeria {
+  border-bottom: 5px solid black;
+}
+.main-galeria .titulo {
+  font-size: 3rem;
+  text-align: center;
+}
+.main-galeria .galeria {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto auto auto;
+  gap: 10px;
+}
+.main-galeria .galeria .galeria__imagen {
+  width: 100%;
+  height: 100%;
+}
+
+.main-salones {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-row-gap: 7vh;
+}
+.main-salones .titulo {
+  text-align: center;
+}
+.main-salones .salon1, .main-salones .salon2, .main-salones .salon3 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  text-align: center;
+}
+.main-salones .salon1 div .salon__titulo, .main-salones .salon2 div .salon__titulo, .main-salones .salon3 div .salon__titulo {
+  font-size: 3em;
+  font-family: "Lucida Calligraphy", cursive;
+}
+.main-salones .salon1 div .salon__descripcion, .main-salones .salon2 div .salon__descripcion, .main-salones .salon3 div .salon__descripcion {
+  font-size: 1.5em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.main-salones .salon1 div .img--mediana, .main-salones .salon2 div .img--mediana, .main-salones .salon3 div .img--mediana {
+  height: 100vh;
+  width: 90%;
+  border: 5px solid #323232;
+  border-radius: 15px;
+}
+.main-salones .salon1 div div .texto--cursivo, .main-salones .salon2 div div .texto--cursivo, .main-salones .salon3 div div .texto--cursivo {
+  font-family: "Lucida Calligraphy", cursive;
+  text-align: center;
+}
+.main-salones .salon1 div div .imagen--chica, .main-salones .salon2 div div .imagen--chica, .main-salones .salon3 div div .imagen--chica {
+  height: 3%;
+  width: 3%;
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: transparent;
+}
+
+.carousel-indicators {
+  background-color: transparent;
+}
+.carousel-indicators.active {
+  background-color: #fff;
+}
+
+footer {
+  text-align: center;
+  border-top: 5px solid #331f01;
+}
+footer .mapa-y-redes {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: 2px solid #331f01;
+}
+footer .mapa-y-redes .minimapa {
+  border: 5px solid #331f01;
+  border-radius: 3px;
+}
+footer .creditos {
+  grid-column: span(2);
+}
+
+@media (max-width: 767px) {
+  .footer .mapa-y-redes {
+    grid-template-columns: 100%;
+  }
+  .main-galeria .galeria {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+}
+@media (max-width: 576px) {
+  .main-galeria .galeria {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

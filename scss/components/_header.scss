@@ -1,0 +1,22 @@
+.header {
+    border-bottom: 0.5vh solid #323232;
+    background-color: $color-principal;
+    nav{
+        div{
+            .logo__texto {
+                font-family: "Lucida Calligraphy", cursive;
+                font-size: 2rem;
+                color: #323232;
+            }
+            div{
+                ul{
+                    li{
+                        .dropdown-menu{
+                            background: #DDD0C8 !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
