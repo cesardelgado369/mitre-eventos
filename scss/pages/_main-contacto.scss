@@ -1,0 +1,41 @@
+.main-contacto {
+    padding: 20px;
+    .texto-centrado {
+        @include texto-centrado;
+        &.borde {
+            @include borde(1px, solid, 000);
+        }
+    }
+    .contenedor-contacto {
+        background-color: black;
+        padding: 10px;
+        border-radius: 8px;
+        form {
+            display: flex;
+            flex-direction: column;
+            .div__form {
+                margin-bottom: 15px;
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+                input,
+                select {
+                    @include form-input;
+                }
+                .input__enviar {
+                    background-color: $color-principal;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    transition: background-color 0.3s;
+
+                    &:hover {
+                        background-color: black;
+                    }
+                }
+            }
+        }
+    }
+}

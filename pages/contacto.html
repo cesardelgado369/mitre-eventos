@@ -33,10 +33,10 @@
                                 Salones
                             </a>
                             <ul class="dropdown-menu item--color">
-                                <li><a class="dropdown-item item--color" href="#salon_asuncion">Salón Asunción</a>
+                                <li><a class="dropdown-item item--color" href="./salones.html">Salón Asunción</a>
                                 </li>
-                                <li><a class="dropdown-item item--color" href="#salon_mitre">Salón Mitre</a></li>
-                                <li><a class="dropdown-item item--color" href="#salon_mitrekids">Mitre Kids</a></li>
+                                <li><a class="dropdown-item item--color" href="./salones.html">Salón Mitre</a></li>
+                                <li><a class="dropdown-item item--color" href="./salones.html">Mitre Kids</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -53,31 +53,37 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="main-contacto">
         <section>
-            <h2 class="texto-centrado borde">Contacto</h2>
+            <h1 class="texto-centrado borde">Reserva una Cita con nosotros</h1>
         </section>
         <section class="contenedor-contacto background-gris">
-            <div class="contacto-main">
-                <form action="">
-                    <div class="inline">
-                        <label for="nombre"></label>
-                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" maxlength="128" class="input input-nombre">
-                    </div>
-                    <div class="inline">
-                        <label for="telefono"></label>
-                        <input type="text" name="telefono" id="telefono" placeholder="Numero de Telefono" maxlength="128" class="input input-telefono">
-                    </div>
-                    <div>
-                        <label for="mail"></label>
-                        <input type="email" name="mail" id="mail" class="input input-email" placeholder="Correo Electronico">
-                    </div>
-                    <div>
-                        <label for=""></label>
-                        <input type="submit" value="enviar" name="" id="" class="input input-submit">
-                    </div>
-                </form>
-            </div>
+            <form action="">
+                <div class="contacto__nombre div__form">
+                    <label for="nombre">Ingrese su nombre:</label>
+                    <input type="text" id="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="contacto__correo div__form">
+                    <label for="correo">Ingrese su email:</label>
+                    <input type="email" placeholder="Correo Electronico" required>
+                </div>
+                <div class="contacto__select div__form">
+                    <label for="salon">Seleccione el salon a consultar:</label>
+                    <select name="salon" id="salon" required>
+                        <option value="salon1">Salon Asunción</option>
+                        <option value="salon2" selected>Salon Mitre</option>
+                        <option value="salon3">Salon Mitre Kids</option>
+                    </select>
+                </div>
+                <div class="contacto__fecha div__form">
+                    <label for="fecha">Ingrese una Fecha para la consulta</label>
+                    <input type="date" name="fecha" id="fecha" required>
+                </div>
+                <div class="contacto__enviar div__form">
+                    <label for="enviar"></label>
+                    <input type="submit" value="enviar" id="enviar" placeholder="Enviar" class="input__enviar">
+                </div>
+            </form>
         </section>
     </main>
     <footer class="footer">
@@ -91,8 +97,8 @@
             <section class="redes">
                 <p>Puedes Iniciar una reserva ahora mismo en el siguiente enlace: <a href="./contacto.html">Reserva Aqui</a></p>
                 <h5>Puedes seguirnos en nuestras redes sociales:</h5>
-                <a href="https://facebook.com">Facebook</a>
-                <a href="https://instagram.com">Instagram</a>
+                <a href="https://facebook.com"><img src="../assets/img/facebook.png" alt="Logo de Facebook en color negro" class="imagen--chica"></a>
+                <a href="https://instagram.com"><img src="../assets/img/instagram.png" alt="Logo de Instagram en color negro" class="imagen--chica"></a>
             </section>
         </div>
         <section class="creditos">
@@ -107,5 +113,8 @@
             </p>
         </section>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 </html>

@@ -1,0 +1,55 @@
+@mixin texto-centrado {
+    text-align: center;
+}
+
+@mixin borde($width, $style, $color) {
+    border: $width $style $color;
+}
+
+@mixin form-input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    &:focus {
+        border-color: $color-secundario;
+        outline: none;
+    }
+}
+
+@mixin salon-estilos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    text-align: center;
+    div {
+        .salon__titulo {
+            font-size: 3em;
+            font-family: "Lucida Calligraphy", cursive;
+        }
+        .salon__descripcion {
+            font-size: 1.5em;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+        .img--mediana {
+            height: 100vh;
+            width: 90%;
+            border: 5px solid #323232;
+            border-radius: 15px;
+        }
+        div {
+            .texto--cursivo {
+                font-family: "Lucida Calligraphy", cursive;
+                text-align: center;
+            }
+            .imagen--chica {
+                height: 3%;
+                width: 3%;
+            }
+        }
+    }
+}

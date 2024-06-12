@@ -1,16 +1,57 @@
-footer{
+.footer {
     text-align: center;
-    border-top: 5px solid #331f01;
-    .mapa-y-redes{
+    border-top: 5px solid $color-secundario;
+    background-color: $color-principal;
+    padding: 20px 0;
+    .mapa-y-redes {
         display: grid;
-        grid-template-columns: 50% 50%;
-        border-bottom: 2px solid #331f01;
-        .minimapa{
-            border: 5px solid #331f01;
-            border-radius: 3px;
+        grid-template-columns: 1fr 1fr;
+        border-bottom: 2px solid $color-secundario;
+        padding: 20px 0;
+        .mapa {
+            padding: 10px;
+            h5 {
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+            iframe.minimapa {
+                width: 100%;
+                height: 150px;
+                border: 5px solid $color-secundario;
+                border-radius: 3px;
+            }
+        }
+        .redes {
+            padding: 10px;
+            text-align: left;
+            p {
+                margin-bottom: 10px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    border: 3px solid $color-secundario;
+                    border-radius: 3px;
+                }
+            }
+            h5 {
+                margin-bottom: 10px;
+                font-size: 1rem;
+            }
+            a {
+                .imagen--chica{
+                    height: 35%;
+                    width: 10%;
+                }
+            }
         }
     }
-    .creditos{
-        grid-column: span(2);
+    .creditos {
+        padding: 10px 0;
+        p {
+            margin: 5px 0;
+            &.texto--gris {
+                color: darken($color-principal, 30%);
+            }
+        }
     }
 }

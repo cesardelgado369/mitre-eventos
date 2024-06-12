@@ -55,17 +55,6 @@
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  .main-index .nosotros {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
-  }
-  .main-index .salones {
-    display: grid;
-    grid-template-columns: auto;
-  }
-}
 .main-nosotros {
   text-align: center;
   padding: 40px;
@@ -103,38 +92,99 @@
 .main-salones .titulo {
   text-align: center;
 }
-.main-salones .salon1, .main-salones .salon2, .main-salones .salon3 {
+.main-salones .salon1 {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   justify-content: center;
   text-align: center;
 }
-.main-salones .salon1 div .salon__titulo, .main-salones .salon2 div .salon__titulo, .main-salones .salon3 div .salon__titulo {
+.main-salones .salon1 div .salon__titulo {
   font-size: 3em;
   font-family: "Lucida Calligraphy", cursive;
 }
-.main-salones .salon1 div .salon__descripcion, .main-salones .salon2 div .salon__descripcion, .main-salones .salon3 div .salon__descripcion {
+.main-salones .salon1 div .salon__descripcion {
   font-size: 1.5em;
   margin-left: 5%;
   margin-right: 5%;
 }
-.main-salones .salon1 div .img--mediana, .main-salones .salon2 div .img--mediana, .main-salones .salon3 div .img--mediana {
+.main-salones .salon1 div .img--mediana {
   height: 100vh;
   width: 90%;
   border: 5px solid #323232;
   border-radius: 15px;
 }
-.main-salones .salon1 div div .texto--cursivo, .main-salones .salon2 div div .texto--cursivo, .main-salones .salon3 div div .texto--cursivo {
+.main-salones .salon1 div div .texto--cursivo {
   font-family: "Lucida Calligraphy", cursive;
   text-align: center;
 }
-.main-salones .salon1 div div .imagen--chica, .main-salones .salon2 div div .imagen--chica, .main-salones .salon3 div div .imagen--chica {
+.main-salones .salon1 div div .imagen--chica {
+  height: 3%;
+  width: 3%;
+}
+.main-salones .salon2 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  text-align: center;
+}
+.main-salones .salon2 div .salon__titulo {
+  font-size: 3em;
+  font-family: "Lucida Calligraphy", cursive;
+}
+.main-salones .salon2 div .salon__descripcion {
+  font-size: 1.5em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.main-salones .salon2 div .img--mediana {
+  height: 100vh;
+  width: 90%;
+  border: 5px solid #323232;
+  border-radius: 15px;
+}
+.main-salones .salon2 div div .texto--cursivo {
+  font-family: "Lucida Calligraphy", cursive;
+  text-align: center;
+}
+.main-salones .salon2 div div .imagen--chica {
+  height: 3%;
+  width: 3%;
+}
+.main-salones .salon3 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  justify-content: center;
+  text-align: center;
+}
+.main-salones .salon3 div .salon__titulo {
+  font-size: 3em;
+  font-family: "Lucida Calligraphy", cursive;
+}
+.main-salones .salon3 div .salon__descripcion {
+  font-size: 1.5em;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.main-salones .salon3 div .img--mediana {
+  height: 100vh;
+  width: 90%;
+  border: 5px solid #323232;
+  border-radius: 15px;
+}
+.main-salones .salon3 div div .texto--cursivo {
+  font-family: "Lucida Calligraphy", cursive;
+  text-align: center;
+}
+.main-salones .salon3 div div .imagen--chica {
   height: 3%;
   width: 3%;
 }
 
-.carousel-control-next-icon, .carousel-control-prev-icon {
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
   background-color: transparent;
 }
 
@@ -145,26 +195,115 @@
   background-color: #fff;
 }
 
-footer {
+.main-contacto {
+  padding: 20px;
+}
+.main-contacto .texto-centrado {
   text-align: center;
-  border-top: 5px solid #331f01;
 }
-footer .mapa-y-redes {
+.main-contacto .texto-centrado.borde {
+  border: 1px solid 0;
+}
+.main-contacto .contenedor-contacto {
+  background-color: black;
+  padding: 10px;
+  border-radius: 8px;
+}
+.main-contacto .contenedor-contacto form {
+  display: flex;
+  flex-direction: column;
+}
+.main-contacto .contenedor-contacto form .div__form {
+  margin-bottom: 15px;
+}
+.main-contacto .contenedor-contacto form .div__form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.main-contacto .contenedor-contacto form .div__form input,
+.main-contacto .contenedor-contacto form .div__form select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.main-contacto .contenedor-contacto form .div__form input:focus,
+.main-contacto .contenedor-contacto form .div__form select:focus {
+  border-color: #000;
+  outline: none;
+}
+.main-contacto .contenedor-contacto form .div__form .input__enviar {
+  background-color: #DDD0C8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.main-contacto .contenedor-contacto form .div__form .input__enviar:hover {
+  background-color: black;
+}
+
+.footer {
+  text-align: center;
+  border-top: 5px solid #000;
+  background-color: #DDD0C8;
+  padding: 20px 0;
+}
+.footer .mapa-y-redes {
   display: grid;
-  grid-template-columns: 50% 50%;
-  border-bottom: 2px solid #331f01;
+  grid-template-columns: 1fr 1fr;
+  border-bottom: 2px solid #000;
+  padding: 20px 0;
 }
-footer .mapa-y-redes .minimapa {
-  border: 5px solid #331f01;
+.footer .mapa-y-redes .mapa {
+  padding: 10px;
+}
+.footer .mapa-y-redes .mapa h5 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.footer .mapa-y-redes .mapa iframe.minimapa {
+  width: 100%;
+  height: 150px;
+  border: 5px solid #000;
   border-radius: 3px;
 }
-footer .creditos {
-  grid-column: span(2);
+.footer .mapa-y-redes .redes {
+  padding: 10px;
+  text-align: left;
+}
+.footer .mapa-y-redes .redes p {
+  margin-bottom: 10px;
+}
+.footer .mapa-y-redes .redes p a {
+  text-decoration: none;
+  color: black;
+  border: 3px solid #000;
+  border-radius: 3px;
+}
+.footer .mapa-y-redes .redes h5 {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+.footer .mapa-y-redes .redes a .imagen--chica {
+  height: 35%;
+  width: 10%;
+}
+.footer .creditos {
+  padding: 10px 0;
+}
+.footer .creditos p {
+  margin: 5px 0;
+}
+.footer .creditos p.texto--gris {
+  color: #a37f69;
 }
 
 @media (max-width: 767px) {
   .footer .mapa-y-redes {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
   }
   .main-galeria .galeria {
     grid-template-columns: auto auto;
@@ -175,6 +314,17 @@ footer .creditos {
   .main-galeria .galeria {
     grid-template-columns: auto;
     grid-template-rows: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-index .nosotros {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+  }
+  .main-index .salones {
+    display: grid;
+    grid-template-columns: auto;
   }
 }
 

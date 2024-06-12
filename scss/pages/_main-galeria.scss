@@ -1,7 +1,7 @@
 .main-galeria{
     .titulo{
         font-size: 3rem;
-        text-align: center;
+        @include texto-centrado;
     }
     .galeria{
         padding: 20px;
